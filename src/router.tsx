@@ -1,9 +1,15 @@
 import { createBrowserRouter } from "react-router";
 import { RootPage } from "./pages/root";
+import { Navbar } from "./components";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
-    element: <RootPage />,
+    element: <Navbar />,
+    children: [
+      {
+        path: "/",
+        element: <RootPage />,
+      },
+    ],
   },
 ]);

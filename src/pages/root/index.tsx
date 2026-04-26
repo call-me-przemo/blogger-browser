@@ -1,8 +1,10 @@
+import { Flex, Text, Button } from "@radix-ui/themes";
+
 export function RootPage() {
   return (
-    <main>
-      <h1>Very nice</h1>
-      <p>I have a chair DX</p>
-    </main>
+    <Flex direction="column" gap="2">
+      <Text>Hello from Radix Themes :)</Text>
+      <Button>Let's go</Button>
+    </Flex>
   );
 }

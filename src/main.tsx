@@ -5,6 +5,7 @@ import { router } from "./router";
 import { Theme, ThemePanel } from "@radix-ui/themes";
 import { ThemeProvider } from "next-themes";
 import "@radix-ui/themes/styles.css";
+import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
